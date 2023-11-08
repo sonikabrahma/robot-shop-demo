@@ -1,7 +1,7 @@
 #
 # Build
 #
-FROM debian:10 AS build
+FROM ubuntu:latest AS build
 
 RUN apt-get update && apt-get -y install maven
 
@@ -15,7 +15,7 @@ RUN mvn package
 #
 # Run
 #
-FROM openjdk:8-jdk
+FROM ibmjava:11-jdk
 
 EXPOSE 8080
 
