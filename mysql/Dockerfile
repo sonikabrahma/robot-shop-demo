@@ -1,4 +1,4 @@
-FROM mysql:5.7
+FROM docker.io/ibmcom/mysql-s390x:5.7.34
 
 VOLUME /data
 
