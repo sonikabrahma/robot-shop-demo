@@ -1,4 +1,4 @@
-FROM fluentd
+FROM docker.io/s390x/fluentd
 USER root
 RUN apk update && \
     apk add --virtual .build-dependencies build-base ruby-dev
