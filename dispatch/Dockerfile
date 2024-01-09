@@ -1,4 +1,4 @@
-FROM golang:1.17
+FROM docker.io/s390x/golang:1.17
 
 WORKDIR /go/src/app
 
