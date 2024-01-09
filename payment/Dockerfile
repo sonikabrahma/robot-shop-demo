@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM docker.io/s390x/python:3.9
 
 EXPOSE 8080
 USER root
