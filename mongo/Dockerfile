@@ -1,4 +1,4 @@
-FROM mongo:5
+FROM docker.io/s390x/mongo
 
 COPY *.js /docker-entrypoint-initdb.d/
 
