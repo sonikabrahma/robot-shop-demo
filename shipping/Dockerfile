@@ -1,7 +1,7 @@
 #
 # Build
 #
-FROM ubuntu:latest AS build
+FROM docker.io/s390x/debian:10 AS build
 
 RUN apt-get update && apt-get -y install maven
 
@@ -15,7 +15,7 @@ RUN mvn package
 #
 # Run
 #
-FROM ibmjava:11-jdk
+FROM docker.io/s390x/openjdk:11-jdk
 
 EXPOSE 8080
 
