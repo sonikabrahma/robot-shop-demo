@@ -1,11 +1,10 @@
----
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
   name: simple
   annotations:
     pipelinesascode.tekton.dev/on-event: "[pull_request, push]"
-    pipelinesascode.tekton.dev/on-target-branch: "[master]"
+    pipelinesascode.tekton.dev/on-target-branch: "[main]"
     pipelinesascode.tekton.dev/task: "git-clone"
     pipelinesascode.tekton.dev/max-keep-runs: "5"
 spec:
